@@ -1,84 +1,167 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Mritunjay Jha Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8">
+    <title>Mritunjay Jha | Software Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
     <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f7f9fb;
+            color: #222;
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+            padding: 40px 32px 32px 32px;
+        }
         .profile-pic {
-            width: 160px;
-            height: 160px;
+            width: 150px;
+            height: 150px;
             object-fit: cover;
             border-radius: 50%;
-            border: 4px solid #eee;
-            margin: 0 auto 1.5rem auto;
+            border: 4px solid #e0e7ef;
+            margin: 0 auto 18px auto;
             display: block;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
         }
-        .center-text { text-align: center; }
+        h1 {
+            text-align: center;
+            margin-bottom: 0;
+            font-size: 2.3rem;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #3a7bd5;
+            font-size: 1.2rem;
+            margin-bottom: 18px;
+            font-weight: 500;
+        }
+        .contact {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact a, .contact span {
+            color: #222;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1rem;
+        }
+        .contact a.icon {
+            font-size: 1.3rem;
+            margin: 0 6px;
+            color: #3a7bd5;
+        }
+        section {
+            margin-bottom: 32px;
+        }
+        section h2 {
+            color: #3a7bd5;
+            border-bottom: 2px solid #e0e7ef;
+            padding-bottom: 6px;
+            margin-bottom: 16px;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+        }
+        ul, .project-list {
+            padding-left: 18px;
+        }
+        .project-list > div {
+            margin-bottom: 18px;
+        }
+        .project-links a {
+            margin-right: 12px;
+            color: #3a7bd5;
+            text-decoration: underline;
+            font-size: 0.98rem;
+        }
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 0.98rem;
+            margin: 32px 0 0 0;
+            padding: 16px 0 0 0;
+            border-top: 1px solid #e0e7ef;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 16px 4vw; }
+            .profile-pic { width: 110px; height: 110px; }
+        }
     </style>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body class="is-preload">
-    <div id="wrapper">
-        <header id="header" class="center-text">
-            <img src="images/pic01.jpg" alt="Mritunjay Jha" class="profile-pic" />
-            <h1>Mritunjay Jha Portfolio</h1>
-            <p>Software Developer | Full Stack | AI Integration</p>
-            <p>
-                <a href="mailto:mj6725@srmist.edu.in">mj6725@srmist.edu.in</a> |
-                <a href="tel:+916202439281">+91 6202439281</a> |
-                Bangalore, Karnataka
-                <a href="https://www.linkedin.com/in/mritunjay-kumar-jha-1b8b2b1b2/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
-                <a href="https://github.com/mritunjaykumarjha" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a>
-            </p>
-        </header>
-        <div id="main">
-            <section id="about" class="main">
-                <h2>Profile</h2>
-                <p>Full Stack Developer specializing in AI-integrated web applications using React, Node.js, and modern frameworks. Expert in real-time collaboration, document processing pipelines, and scalable backend architectures with AI API integrations.</p>
-            </section>
-            <section id="education" class="main">
-                <h2>Education</h2>
-                <strong>SRM Institute of Science and Technology Kattankulathur, Chennai</strong><br />
-                <em>B.Tech in Computer Science Engineering</em> | CGPA: 7.89/10.0 | 2020 – 2024<br />
-                <a href="#" target="_blank">Certificate</a> | Kattankulathur, Chennai, India
-            </section>
-            <section id="skills" class="main">
-                <h2>Skills & Achievements</h2>
+<body>
+    <div class="container">
+        <img src="images/dp.jpg" alt="Mritunjay Jha" class="profile-pic">
+        <h1>Mritunjay Jha</h1>
+        <div class="subtitle">Software Developer</div>
+        <div class="contact">
+            <a href="mailto:mj6725@srmist.edu.in">mj6725@srmist.edu.in</a> |
+            <span>+91 6202392078</span> |
+            <span>Bangalore, Karnataka</span>
+            <br>
+            <a href="https://www.linkedin.com/in/mritunjay-kumar-jha-1b8b2b1b2/" target="_blank" class="icon brands fa-linkedin">LinkedIn</a>
+            <a href="https://github.com/mritunjaykumarjha" target="_blank" class="icon brands fa-github">GitHub</a>
+        </div>
+
+        <section>
+            <h2>Profile</h2>
+            <p>Full Stack Developer web applications using React, Node.js, and modern frameworks. Expert in real-time collaboration, document processing pipelines, and scalable backend architectures with AI API integrations.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <strong>SRM Institute of Science and Technology Kattankulathur, Chennai</strong><br>
+            <em>B.Tech in Computer Science Engineering</em> | CGPA: 7.89/10.0 | 2020 – 2024<br>
+            <a href="https://drive.google.com/file/d/1QwQvQ9b6pQn6n5QwQvQ9b6pQn6n5QwQv/view?usp=sharing" target="_blank">Certificate</a>
+        </section>
+
+        <section>
+            <h2>Skills & Achievements</h2>
+            <ul>
+                <li>Presented a paper titled <strong>\"Malaria Cell Detection using Transfer Learning and CNN\"</strong> at the National-level Conference RING’24, organized by the Department of Computer Science and Engineering. <a href="https://drive.google.com/file/d/1QwQvQ9b6pQn6n5QwQvQ9b6pQn6n5QwQv/view?usp=sharing" target="_blank">[View Certificate]</a></li>
+                <li><strong>Languages:</strong> C, C++, Javascript, HTML/CSS, Python</li>
+                <li><strong>Technologies:</strong> Git, Node.js, React, Express.js, MongoDB, Typescript, AWS(EC2), MERN</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experiences</h2>
+            <div>
+                <strong>ML Virtual Internship</strong> <span style="float:right;">Remote | Sep 2023 – Nov 2023</span><br>
+                <em>AICTE</em> <a href="https://drive.google.com/file/d/1QwQvQ9b6pQn6n5QwQvQ9b6pQn6n5QwQv/view?usp=sharing" target="_blank">Certificate</a>
                 <ul>
-                    <li>Presented a paper titled <strong>"Malaria Cell Detection using Transfer Learning and CNN"</strong> at the National-level Conference RING’24, organized by the Department of Computer Science and Engineering. <a href="#" target="_blank">[View Certificate]</a></li>
-                    <li><strong>Languages:</strong> C, C++, Javascript, HTML/CSS, Python</li>
-                    <li><strong>Technologies:</strong> Git, Node.js, React, Express.js, MongoDB, Typescript, AWS(EC2), MERN</li>
+                    <li>Completed a virtual internship focused on the basics of Machine Learning, offered by AICTE.</li>
+                    <li>Built foundational understanding of key ML concepts such as supervised learning, unsupervised learning, and model evaluation.</li>
+                    <li>Engaged in interactive learning sessions and self-assessment quizzes to solidify theoretical knowledge and practical insights.</li>
                 </ul>
-            </section>
-            <section id="experience" class="main">
-                <h2>Experiences</h2>
+            </div>
+            <div>
+                <strong>AWS Cloud Virtual Internship</strong> <span style="float:right;">Remote | May 2023 – July 2023</span><br>
+                <em>AICTE & SRM Institute of Science and Technology</em>
+                <ul>
+                    <li>Gained hands-on experience with AWS Cloud Computing, learning core concepts like IaaS, PaaS, and SaaS.</li>
+                    <li>Developed and deployed applications using key AWS services including EC2, S3, and Lambda.</li>
+                    <li>Learned to design scalable, reliable, and cost-effective cloud architectures following AWS best practices.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="project-list">
                 <div>
-                    <strong>ML Virtual Internship</strong> <span style="float:right;">Remote | Sep 2023 – Nov 2023</span><br />
-                    <em>AICTE</em> <a href="#" target="_blank">Certificate</a><br />
-                    <ul>
-                        <li>Completed a virtual internship focused on the basics of Machine Learning, offered by AICTE.</li>
-                        <li>Built foundational understanding of key ML concepts such as supervised learning, unsupervised learning, and model evaluation.</li>
-                        <li>Engaged in interactive learning sessions and self-assessment quizzes to solidify theoretical knowledge and practical insights.</li>
-                    </ul>
-                </div>
-                <div>
-                    <strong>AWS Cloud Virtual Internship</strong> <span style="float:right;">Remote | May 2023 – July 2023</span><br />
-                    <em>AICTE & SRM Institute of Science and Technology</em><br />
-                    <ul>
-                        <li>Gained hands-on experience with AWS Cloud Computing, learning core concepts like IaaS, PaaS, and SaaS.</li>
-                        <li>Developed and deployed applications using key AWS services including EC2, S3, and Lambda.</li>
-                        <li>Learned to design scalable, reliable, and cost-effective cloud architectures following AWS best practices.</li>
-                    </ul>
-                </div>
-            </section>
-            <section id="projects" class="main">
-                <h2>Projects</h2>
-                <div>
-                    <strong>Route Optimization Visualizer – Interactive Graph Algorithm Demonstrator</strong> <a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a><br />
-                    <em>C++ Developer – SFML + CMake + Multi-threading | January 2023 – March 2023</em>
+                    <strong>Route Optimization Visualizer – Interactive Graph Algorithm Demonstrator</strong>
+                    <div class="project-links">
+                        <a href="https://github.com/mritunjaykumarjha/Route-Optimization-Visualizer" target="_blank">GitHub</a>
+                    </div>
+                    <em>C++ Developer – SFML + CMake + Multi-threading | Jan 2023 – Mar 2023</em>
                     <ul>
                         <li>Implemented 5+ pathfinding algorithms (Dijkstra’s, A*, Bellman-Ford, Floyd-Warshall, Bidirectional) with real-time step-by-step visualization using SFML 3.0.</li>
                         <li>Built modular graph architecture with adjacency lists and weighted edges, supporting dynamic node/edge manipulation and multiple layout generation (grid, circular, random).</li>
@@ -86,8 +169,12 @@
                     </ul>
                 </div>
                 <div>
-                    <strong>CollabNotes – Real-time Collaborative Note-Taking Platform</strong> <a href="#" class="icon brands fa-external-link-alt"><span class="label">Live Link</span></a><br />
-                    <em>Full Stack Developer – React + Node.js + MongoDB | April 2024 – June 2024</em>
+                    <strong>CollabNotes – Real-time Collaborative Note-Taking Platform</strong>
+                    <div class="project-links">
+                        <a href="https://collabnotes.live" target="_blank">Live Link</a>
+                        <a href="https://github.com/mritunjaykumarjha/CollabNotes" target="_blank">GitHub</a>
+                    </div>
+                    <em>Full Stack Developer – React + Node.js + MongoDB | Apr 2024 – Jun 2024</em>
                     <ul>
                         <li>Built a modern collaborative note-taking platform with real-time editing capabilities using React, Node.js, and MongoDB.</li>
                         <li>Implemented JWT authentication with refresh tokens, Socket.io for real-time collaboration, and AI-powered features including content suggestions, title generation, and speech-to-text transcription using OpenAI API.</li>
@@ -95,7 +182,10 @@
                     </ul>
                 </div>
                 <div>
-                    <strong>DocChat AI – AI-Powered Document Chat Application</strong> <a href="#" class="icon brands fa-github"><span class="label">GitHub Link</span></a><br />
+                    <strong>DocChat AI – AI-Powered Document Chat Application</strong>
+                    <div class="project-links">
+                        <a href="https://github.com/mritunjaykumarjha/DocChat-AI" target="_blank">GitHub</a>
+                    </div>
                     <em>Full Stack Developer (MERN + TypeScript + AI) | Jan 2023 – Mar 2023</em>
                     <ul>
                         <li>Built fullstack AI document chat platform with OpenAI GPT-3.5 integration, enabling users to upload documents.</li>
@@ -103,30 +193,32 @@
                         <li>Engineered document processing pipeline supporting PDF/image/text formats with OCR integration using Tesseract.js and robust JWT authentication. Redis job queues, and containerized deployment with Docker, ensuring scalable and secure document management.</li>
                     </ul>
                 </div>
-            </section>
-            <section id="certifications" class="main">
-                <h2>Certifications & Workshops</h2>
-                <ul>
-                    <li><strong>AWS Cloud Foundations</strong> <a href="#" target="_blank">[Certificate]</a></li>
-                    <li><strong>AWS Machine Learning Foundations</strong> <a href="#" target="_blank">[Certificate]</a></li>
-                    <li><strong>Cloud Computing Virtual Workshop</strong> <a href="#" target="_blank">[Certificate]</a></li>
-                    <li><strong>AICTE: AWS Cloud Foundations with Cloud Run</strong> <a href="#" target="_blank">[Certificate]</a></li>
-                </ul>
-            </section>
-            <section id="contact" class="main">
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:mj6725@srmist.edu.in">mj6725@srmist.edu.in</a><br />
-                Phone: <a href="tel:+916202392078">+91 6202392078</a><br />
-                Location: Bangalore, Karnataka</p>
-                <ul class="icons">
-                    <li><a href="https://www.linkedin.com/in/mritunjay-kumar-jha-1b8b2b1b2/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/mritunjaykumarjha" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                </ul>
-            </section>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications & Workshops</h2>
+            <ul>
+                <li><strong>AWS Cloud Foundations</strong> <a href="https://www.credly.com/badges/your-aws-cloud-foundations-certificate" target="_blank">[Certificate]</a></li>
+                <li><strong>AWS Machine Learning Foundations</strong> <a href="https://www.credly.com/badges/your-aws-ml-foundations-certificate" target="_blank">[Certificate]</a></li>
+                <li><strong>Cloud Computing Virtual Workshop</strong> <a href="https://www.credly.com/badges/your-cloud-computing-certificate" target="_blank">[Certificate]</a></li>
+                <li><strong>AICTE: AWS Cloud Foundations with Cloud Run</strong> <a href="https://www.credly.com/badges/your-aicte-aws-cloud-run-certificate" target="_blank">[Certificate]</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <div>
+                <strong>Email:</strong> <a href="mailto:mj6725@srmist.edu.in">mj6725@srmist.edu.in</a><br>
+                <strong>Phone:</strong> <a href="tel:+916202392078">+91 6202392078</a><br>
+                <strong>Location:</strong> Bangalore, Karnataka<br>
+                <a href="https://www.linkedin.com/in/mritunjay-kumar-jha-1b8b2b1b2/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/mritunjaykumarjha" target="_blank">GitHub</a>
+            </div>
+        </section>
+        <div class="footer">
+            &copy; 2024 Mritunjay Jha. All rights reserved.
         </div>
-        <footer id="footer" class="center-text">
-            <p>&copy; 2024 Mritunjay Jha. All rights reserved.</p>
-        </footer>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
